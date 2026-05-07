@@ -23,6 +23,8 @@ x-shared: &shared
     - OFFLOAD_MANUAL_EXECUTIONS_TO_WORKERS=true
     - N8N_HOST=${N8N_HOST}
     - WEBHOOK_URL=${WEBHOOK_URL}
+    - N8N_PROXY_HOPS=${N8N_PROXY_HOPS}
+    - N8N_EDITOR_BASE_URL=${N8N_EDITOR_BASE_URL}
   volumes:
     - n8n_storage:/home/node/.n8n
   depends_on:
